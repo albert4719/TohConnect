@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "tohconnect",
+	"version": "${version}",
+	"name": "TohConnect",
+	"description": "Connect to websocket servers",
+	"authors": [
+		"Albert"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tohconnect/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.toh.TohConnect",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.toh.client.TohConnectClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"tohconnect.mixins.json",
+		{
+			"config": "tohconnect.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
