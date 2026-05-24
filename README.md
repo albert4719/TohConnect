@@ -1,9 +1,6 @@
 # TohConnect
 
-## Setup
+前置MOD: https://modrinth.com/mod/fabric-language-kotlin
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+安装后启动，编辑minecraft/config/toh_connect.json,输入ws服务器地址后重启客户端即可
+本地输入127.0.0.1作为服务器IP即可进入服务器
