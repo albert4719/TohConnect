@@ -6,7 +6,7 @@ import java.nio.file.Paths
 
 // 1. 定义配置文件的具体结构
 data class TohConfig(
-    val proxyUrl: String = "ws://example.com:80/mc" // 这里是默认值
+    val proxyUrl: String = "ws://ws.mcyyy.com/mc" // 这里是默认值
 )
 
 // 2. 配置文件的加载与保存管理器
